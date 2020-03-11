@@ -1,0 +1,81 @@
+.headerWrapper {
+    background-color: #4e9af1;
+    height:60px;
+    display: flex;
+    flex-flow: row-reverse;
+    position: sticky;
+    >div{
+        padding:10px 40px;
+        >img{
+            height: 30px;
+            width: 30px;
+        }
+        >span{
+            padding: 5px 10px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;;
+        }
+    }
+}
+
+
+.cartContainer {
+    display: flex;
+    flex-wrap: wrap;
+    .individualCartContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 10px;
+        .cardImage {
+            width: 200px;
+            height:200px;
+        }
+        .cardName{
+            font-size: 14px;
+            text-transform: capitalize;
+            padding: 5px 0;
+        }
+        .cardPrice {
+            font-size: 12px;
+            padding:  0 0 5px 0;
+        }
+
+        >select {
+            background-color: transparent;
+            padding: 5px;
+            height: 30px;
+        }
+        >button {
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: #4e9af1;
+            border-radius: 20px;
+            border: 2px solid #4e9af1;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+                color: white;
+                background-color: #4e9af1;
+                
+            }
+        }
+
+    }
+
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .saveButton, .cancelButton {
+        font-size: 20px;
+        color: white;
+        width: 200px;
+        padding: 10px;
+        background-color: #4e9af1;
+        border-radius: 30px
+    }
+}
