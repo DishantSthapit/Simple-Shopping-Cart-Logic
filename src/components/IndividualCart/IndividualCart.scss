@@ -1,0 +1,66 @@
+.itemContainer {
+
+
+    .itemWrapper{
+        display: flex;
+        padding-right: 10px;
+        width: 100%;
+        .itemImageWrapper {
+            width: 40%;
+            margin: auto 0;
+            >img {
+                width: 100%;
+            }
+
+        }
+        .itemContentWrapper{
+            width: 60%;
+            padding:20px;
+            height: 100%;
+            overflow: scroll;
+            .itemName  {
+                color: red;
+                text-transform: capitalize;
+            }
+            .itemPrice{
+
+            }
+            .itemDescription{
+                font-size: 14px;
+            }
+            >select {
+                background-color: transparent;
+                padding: 5px;
+                height: 30px;
+            }
+            >button{
+                margin: 0 0 0 10px;
+                font-size: 14px;
+                color: white;
+                width: 30%;
+                padding: 5px;
+                background-color: #4e9af1;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .buttonWrapper{
+        display: flex;
+        >button{
+            margin: 10px 0 0 0 ;
+            font-size: 20px;
+            color: white;
+            width: 30%;
+            padding: 10px;
+            background-color: #4e9af1;
+            border-radius: 30px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

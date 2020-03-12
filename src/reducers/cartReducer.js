@@ -1,9 +1,11 @@
-const cart = (state = {}, action) => {
+const cart = (state = {data: []}, action) => {
     switch(action.type){
         case "CART":
             return {
-                ...state,
-                data: action.payload,
+                    data: [
+                        ...state.data,
+                        action.payload,
+                    ]
             }
         default:
             return state

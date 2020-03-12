@@ -1,0 +1,20 @@
+.headerWrapper {
+    background-color: #4e9af1;
+    height:60px;
+    display: flex;
+    flex-flow: row-reverse;
+    position: sticky;
+    >div{
+        padding:10px 40px;
+        >img{
+            height: 30px;
+            width: 30px;
+        }
+        >span{
+            padding: 5px 10px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;;
+        }
+    }
+}
